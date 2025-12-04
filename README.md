@@ -43,8 +43,8 @@ This is a professional Telegram bot for downloading videos from **1000+ websites
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/video-downloader-bot.git
-cd video-downloader-bot
+git clone https://github.com//iNickFery/Super-Downloader-Bot.git
+cd Super-Downloader-Bot
 
 # Run installation script
 chmod +x install.sh
