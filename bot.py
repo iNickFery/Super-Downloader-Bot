@@ -3570,12 +3570,24 @@ async def daily_reset_task():
 # ERROR HANDLERS
 # ═══════════════════════════════════════════════════════════════════════════════
 
-@app.on_error()
-async def error_handler(client: Client, error: Exception):
-    """Global error handler."""
-    logger.error(f"Unhandled error: {error}")
+async def global_exception_handler(client: Client, update, exception: Exception):
+    """Global error handler for all updates."""
+    logger.error(f"Unhandled error in update {type(update).__name__}: {exception}")
     logger.error(traceback.format_exc())
-
+    
+    # اگر خطا در پیام است، سعی کنید به کاربر اطلاع دهید
+    try:
+        if hasattr(update, 'from_user') and update.from_user:
+            user_id = update.from_user.id
+            lang_code = get_user_language(user_id)
+            
+            await client.send_message(
+                chat_id=user_id,
+                text=get_text("common.error", lang_code=lang_code),
+                parse_mode=enums.ParseMode.HTML
+            )
+    except Exception as e:
+        logger.error(f"Error sending error message to user: {e}")
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # MAIN EXECUTION
