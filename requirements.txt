@@ -1,0 +1,128 @@
+# ╔══════════════════════════════════════════════════════════════════════════════╗
+# ║                    Professional Video Downloader Bot                         ║
+# ║                         Python Dependencies                                  ║
+# ║                                                                              ║
+# ║  Install with: pip install -r requirements.txt                               ║
+# ╚══════════════════════════════════════════════════════════════════════════════╝
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# CORE DEPENDENCIES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Telegram MTProto API Client
+# https://docs.pyrogram.org/
+pyrogram>=2.0.106
+
+# Crypto extension for Pyrogram (faster encryption)
+# https://github.com/pyrogram/tgcrypto
+tgcrypto>=1.2.5
+
+# Video/Audio downloader supporting 1000+ sites
+# https://github.com/yt-dlp/yt-dlp
+yt-dlp>=2024.12.3
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# ASYNC & NETWORKING
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Async HTTP client/server
+# https://docs.aiohttp.org/
+aiohttp>=3.9.0
+
+# Async file operations
+# https://github.com/Tinche/aiofiles
+aiofiles>=23.2.1
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONFIGURATION & ENVIRONMENT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Load environment variables from .env file
+# https://github.com/theskumar/python-dotenv
+python-dotenv>=1.0.0
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# SECURITY & ENCRYPTION
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Cryptographic recipes and primitives
+# https://cryptography.io/
+cryptography>=42.0.0
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# DATABASE
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Async SQLite with aiosqlite
+# https://github.com/omnilib/aiosqlite
+aiosqlite>=0.19.0
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# UTILITIES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Human-friendly file sizes, durations, etc.
+# https://github.com/python-humanize/humanize
+humanize>=4.9.0
+
+# Fast JSON parsing
+# https://github.com/ijl/orjson
+orjson>=3.9.10
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OPTIONAL: DEVELOPMENT & TESTING
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Uncomment for development:
+
+# Code formatting
+# black>=23.12.1
+
+# Import sorting
+# isort>=5.13.2
+
+# Linting
+# flake8>=7.0.0
+# pylint>=3.0.3
+
+# Type checking
+# mypy>=1.8.0
+
+# Testing
+# pytest>=7.4.4
+# pytest-asyncio>=0.23.3
+# pytest-cov>=4.1.0
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OPTIONAL: MONITORING & PERFORMANCE
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Uncomment for production monitoring:
+
+# System monitoring
+# psutil>=5.9.7
+
+# Memory profiling
+# memory-profiler>=0.61.0
+
+# APScheduler for background tasks
+# apscheduler>=3.10.4
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OPTIONAL: ENHANCED FEATURES
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Uncomment for enhanced features:
+
+# Redis for distributed caching
+# redis>=5.0.1
+# aioredis>=2.0.1
+
+# PostgreSQL database
+# asyncpg>=0.29.0
+
+# MongoDB database
+# motor>=3.3.2
+
+# Sentry error tracking
+# sentry-sdk>=1.39.1
