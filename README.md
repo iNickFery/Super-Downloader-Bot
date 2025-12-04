@@ -58,6 +58,7 @@ Or manual installation:
 sudo apt install python3.12-venv
 python3 -m venv venv
 source venv/bin/activate
+sudo apt install build-essential python3-dev -y
 
 # Install dependencies
 pip install -r requirements.txt
